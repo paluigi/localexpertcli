@@ -1,0 +1,24 @@
+[project]
+name = "localexpertcli"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Luigi Palumbo", email = "20042921+paluigi@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "httpx>=0.28.1",
+    "markitdown>=0.1.5",
+    "rich>=14.3.3",
+    "tenacity>=9.1.4",
+    "typer>=0.24.1",
+]
+
+[project.scripts]
+localexpertcli = "localexpertcli:main"
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10.0"]
+build-backend = "uv_build"
